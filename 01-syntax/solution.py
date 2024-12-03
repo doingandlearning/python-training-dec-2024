@@ -1,11 +1,21 @@
+import sys
 
-print(f"Sum is {1 + 3}")
+print(sys.argv)
 
-first_number = int(input("What is the first number? "))
-second_number = int(input("What is the second number? "))
-print(sum)
+# sys.argv[1]
+# sys.argv[2]
+if len(sys.argv) > 1:
+    first_number = int(sys.argv[1])
+else:
+    first_number = int(input("What is the first number? "))
+
+if len(sys.argv) > 2:
+    second_number = int(sys.argv[2])
+else:
+    second_number = int(input("What is the second number? "))
+
+
 sum = first_number + second_number
-print(sum)
 difference = first_number - second_number
 product = first_number * second_number
 quotient = first_number / second_number
