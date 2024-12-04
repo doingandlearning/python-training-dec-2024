@@ -12,3 +12,14 @@ html_content = """
     </body>
 </html>
 """
+
+soup = BeautifulSoup(html_content, "html.parser")
+
+print(soup.title.string)
+
+h1_text = soup.find("h1").text
+print(h1_text)
+
+links = soup.find_all("a")
+for link in links:
+    print(f"Link: {link['href']}, {link.text}")
