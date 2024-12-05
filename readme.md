@@ -53,7 +53,7 @@ The workshop will be a mix of talking and questioning, coding along, and hands-o
 **Objective:** Enable participants to automate repetitive tasks using Python, from file handling to web scraping.
 
 **Agenda:**
-
+ Error Handling
 1. Introduction to Automation
 2. File Handling
 3. Working with OS Module
@@ -68,10 +68,11 @@ The workshop will be a mix of talking and questioning, coding along, and hands-o
 
 **Agenda:**
 
-1. Introduction to APIs
-2. Setting Up and Exploring Django
-3. Defining Models and Serializers
-4. Building API Views
-5. Implementing CRUD Operations
-6. Testing Your API
-7. Wrap-Up and Q&A
+- Classes
+
+1. Setting Up and Exploring Django
+2. Creating a JSON endpoint
+3. Accepting data 
+4. The Django REST Framework
+5. CRUD with DRF
+6. JWT Auth
