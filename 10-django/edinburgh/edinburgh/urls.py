@@ -18,6 +18,9 @@ from django.contrib import admin
 from django.urls import path
 from api.views import hello_world, drf_view
 from weather.views import get_weather
+
+from api.urls import book_urls
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("hello/", hello_world),
@@ -25,3 +28,5 @@ urlpatterns = [
     path("weather/", get_weather),
     path("drf-view/", drf_view)
 ]
+
+urlpatterns += book_urls

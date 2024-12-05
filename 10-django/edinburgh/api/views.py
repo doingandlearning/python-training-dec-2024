@@ -3,7 +3,13 @@ from django.http import JsonResponse
 from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 from rest_framework.decorators import api_view, renderer_classes
+from rest_framework.viewsets import ModelViewSet
+from .models import Book
+from .serializers import BookSerializer
 
+class BookViewSet(ModelViewSet):
+    queryset = Book.objects.all()
+    serializer_class = BookSerializer
 
 # Create your views here.
 
