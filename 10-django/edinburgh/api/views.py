@@ -20,5 +20,5 @@ def drf_view(request):
     if request.method == "GET":
         return Response({"message": "Hello, for DRF!"})
     elif request.method == "POST":
-        return Response({"data": request.data})
+        return Response({"data": request.body})
 
