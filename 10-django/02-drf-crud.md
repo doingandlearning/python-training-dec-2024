@@ -19,6 +19,17 @@ class Book(models.Model):
     author = models.CharField(max_length=100)
 ```
 
+
+This creates a file which shows the diffs between the database and the code.
+```bash
+python manage.py makemigations
+```
+
+This updates the database to match the code - applying the migrations to the database
+```bash
+python manage.py migrate
+```
+
 `api/serializers.py`
 
 ```python
