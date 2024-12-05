@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     # Any third party imports
-
+    "rest_framework",
 
     # Our local imports
     "api"
