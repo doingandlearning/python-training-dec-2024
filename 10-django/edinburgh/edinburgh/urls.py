@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from api.views import hello_world
-
+from weather.views import get_weather
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("hello/", hello_world),
-    path("hello/<str:name_from_path>/", hello_world)
+    path("hello/<str:name_from_path>/", hello_world),
+    path("weather/", get_weather)
 ]
