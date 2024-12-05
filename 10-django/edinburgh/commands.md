@@ -1,4 +1,6 @@
-django-admin createapp edinburgh
+
+
+django-admin startapp edinburgh
 cd edinburgh
 python manage.py migrate
 python manage.py createsuperuser
