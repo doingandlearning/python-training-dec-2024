@@ -54,3 +54,7 @@ print(person1 + person2)
 
 print([person1, person2])
 print(f"{person1} this is a person")
+print(person1.__dict__)
+
+class Employee(Person):
+    pass
